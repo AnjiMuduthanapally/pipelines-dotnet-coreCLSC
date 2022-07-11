@@ -18,4 +18,5 @@ steps:
   inputs:
     command: 'build'
     projects: '/**/*.csproj'
-    arguments: '--configuration Release -o  $(BUildDirectory)''
+    arguments: '--configuration Release -o  $(BUildDirectory)'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
